@@ -20,7 +20,7 @@ public class Entrada_numeros2 {
         
         String numero = JOptionPane.showInputDialog("Ingrese el numero");
         
-        double numero_c=Double.parseDouble(numero);// es un metodo estatico por ello se le llama a la calse dobule. seguido del meetodo
+        double numero_c=Double.parseDouble(numero);// es un metodo estatico por ello se le llama a la clase dobule. seguido del meetodo
         
                 
         System.out.println("la raiz del numero " + numero + "es" );
