@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="circle" tagdir="/WEB-INF/tags" %>
+<html>
+<body bgcolor="#f5f5dc">
+<table cellspacing="1" cellpadding="1" width="20%" border="0">
+    <tr valign="bottom">
+        <td><a href="/index.jsp"><font size=3>Calcular el área de un rectángulo</font> </a> </td>
+        <td><a href="/index2.jsp"><font size=3>Calcular el área del círculo</font> </a> </td>
+    </tr>
+</table>
+<p>Ingrese el radio del círculo:
+<FORM action="" method=get name=form>
+    <table>
+        <tr>
+            <td>Ingrese el valor del radio:</td>
+            <td><input type="text" name="rd"></td>
+        </tr>
+    </table>
+
+    <br><input type="submit" value="enviar" name=submit />
+</FORM>
+<%
+    String rd = request.getParameter("rd");
+    if(rd!=null) {
+          %><circle:Circle rr="<%=rd%>"/>
+            <br><%=message%>
+            <br><%=area%>
+        <%}
+
+    %>
+</body>
+</html>
