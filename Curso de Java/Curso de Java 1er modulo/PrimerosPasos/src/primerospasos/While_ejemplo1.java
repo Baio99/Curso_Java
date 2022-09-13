@@ -36,7 +36,7 @@ public class While_ejemplo1 {
             
         }
         
-        System.out.println("Contraseña correcta ");// imprimo contraseña conrrecta y salgo del bucle while
+        System.out.println("Contraseña correcta ");// imprimo contraseña conrrecta y salgo del bucle while  
     }
     
 }
